@@ -1,11 +1,11 @@
-import btcLogo from '../assets/btc.svg'
-import ethLogo from '../assets/eth.svg'
-import usdtLogo from '../assets/usdt.svg'
-import bnbLogo from '../assets/bnb.svg'
-import xrpLogo from '../assets/xrp.svg'
-import adaLogo from '../assets/ada.svg'
-import dogeLogo from '../assets/doge.svg'
-import solLogo from '../assets/sol.svg'
+import btcLogo from '../assets/btc.png'
+import ethLogo from '../assets/eth.png'
+import usdtLogo from '../assets/usdt.png'
+import bnbLogo from '../assets/bnb.png'
+import xrpLogo from '../assets/xrp.png'
+import adaLogo from '../assets/ada.png'
+import dogeLogo from '../assets/doge.png'
+import solLogo from '../assets/sol.png'
 
 export default [
   {
