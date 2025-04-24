@@ -33,3 +33,29 @@ Other Tools:
 Simulated WebSocket for real-time data updates
 
 Vercel (for deployment)
+
+
+Installation
+Follow these steps to run the project locally:
+
+Clone the repository:
+
+git clone https://github.com/Gourav123-sys/crypto-price-tracker.git
+cd crypto-price-tracker
+Install the dependencies:
+
+This project uses the following dependencies:
+
+React (for building the UI)
+
+Redux Toolkit (for state management)
+
+Tailwind CSS (for styling)
+
+Lucide Icons (for icons like search and filter)
+
+Other dependencies for utilities like WebSocket simulation.
+
+Run the development server:
+
+npm run dev
