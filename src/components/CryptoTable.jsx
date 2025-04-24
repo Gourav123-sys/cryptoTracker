@@ -81,8 +81,8 @@ export default function CryptoTable() {
         <table className="w-full text-sm md:text-base table-auto bg-white">
           <thead className="bg-blue-100 text-blue-800 uppercase text-sm font-semibold">
             <tr>
-              {[
-                "#", "Name", "Price", "1h %", "24h %", "7d %",
+              {[ 
+                "#", "Name", "Price", "1h %", "24h %", "7d %", 
                 "Market Cap", "24h Volume", "Circulating", "Max Supply", "7D Chart"
               ].map((head, idx) => (
                 <th key={idx} className="px-4 py-3 text-left whitespace-nowrap">{head}</th>
@@ -102,23 +102,17 @@ export default function CryptoTable() {
                 </td>
                 <td className="px-4 py-3">${c.price.toLocaleString()}</td>
                 <td className="px-4 py-3">
-                  <span className={`px-2 py-1 text-xs rounded-full font-semibold ${
-                    c.percent_change_1h >= 0 ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-600'
-                  }`}>
+                  <span className={`px-2 py-1 text-xs rounded-full font-semibold ${c.percent_change_1h >= 0 ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-600'}`}>
                     {c.percent_change_1h}%
                   </span>
                 </td>
                 <td className="px-4 py-3">
-                  <span className={`px-2 py-1 text-xs rounded-full font-semibold ${
-                    c.percent_change_24h >= 0 ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-600'
-                  }`}>
+                  <span className={`px-2 py-1 text-xs rounded-full font-semibold ${c.percent_change_24h >= 0 ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-600'}`}>
                     {c.percent_change_24h}%
                   </span>
                 </td>
                 <td className="px-4 py-3">
-                  <span className={`px-2 py-1 text-xs rounded-full font-semibold ${
-                    c.percent_change_7d >= 0 ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-600'
-                  }`}>
+                  <span className={`px-2 py-1 text-xs rounded-full font-semibold ${c.percent_change_7d >= 0 ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-600'}`}>
                     {c.percent_change_7d}%
                   </span>
                 </td>
@@ -162,6 +156,7 @@ export default function CryptoTable() {
               <div><strong>Circulating:</strong> {c.circulating_supply.toLocaleString()}</div>
               <div><strong>Max Supply:</strong> {c.max_supply ? c.max_supply.toLocaleString() : '∞'}</div>
               <div>
+                <strong>7D Chart:</strong>
                 <img src={c.chart_7d} alt={`${c.symbol} chart`} className="w-full h-10 object-contain mt-2" />
               </div>
             </div>
