@@ -1,5 +1,5 @@
-import { updateData } from '../features/cryptoSlice.js'
-import { mockData } from '../utils/mockData.js'
+import { updateData } from './features/cryptoSlice.js'
+import { mockData } from './utils/mockData.js'
 
 let interval
 
