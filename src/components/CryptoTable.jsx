@@ -118,7 +118,9 @@ export default function CryptoTable() {
                 <td className="px-4 py-3">{c.circulating_supply.toLocaleString()}</td>
                 <td className="px-4 py-3">{c.max_supply ? c.max_supply.toLocaleString() : '∞'}</td>
                 <td className="px-4 py-3">
-                  <img src={c.chart_7d} alt={`${c.symbol} chart`} className="w-24 h-10 rounded-sm object-contain mx-auto" />
+                  <div className="w-32 h-12 flex items-center justify-center">
+                    <img src={c.chart_7d} alt={`${c.symbol} chart`} className="w-full h-full object-contain" />
+                  </div>
                 </td>
               </tr>
             ))}
@@ -153,7 +155,6 @@ export default function CryptoTable() {
               <div><strong>Circulating:</strong> {c.circulating_supply.toLocaleString()}</div>
               <div><strong>Max Supply:</strong> {c.max_supply ? c.max_supply.toLocaleString() : '∞'}</div>
 
-              {/* Updated Chart Image */}
               <div className="mt-2">
                 <strong>7D Chart</strong>
                 <img src={c.chart_7d} alt={`${c.symbol} chart`} className="w-full h-auto object-contain mt-1" />
