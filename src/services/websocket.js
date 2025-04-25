@@ -1,4 +1,4 @@
-import { updateData } from './features/cryptoSlice.js'
+import { updateCryptoData } from './features/cryptoSlice.js'
 import { mockData } from './utils/mockData.js'
 
 let interval
@@ -9,7 +9,7 @@ export const startMockWebSocket = (dispatch) => {
       ...coin,
       price: (coin.price * (1 + (Math.random() - 0.5) / 50)).toFixed(2),
     }))
-    dispatch(updateData(updatedData))
+    dispatch(updateCryptoData(updatedData))
   }, 2000)
 }
 
